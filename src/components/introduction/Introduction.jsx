@@ -65,7 +65,7 @@ const Introduction = () => {
             </span>
           </p>
           <p className="text-xs xxs:text-lg lg:text-[18px] my-6">
-            I'm a <span className="text-picto-primary font-bold">Full Stack Developer</span> with over 1.4 years of experience in architecting scalable web applications. I specialize in building high-performance systems using <span>React.js, Node.js, and Microservices</span>, with expertise in <span>Kafka, Redis, and MongoDB</span> to deliver robust production-ready solutions.
+            I'm a <span className="text-picto-primary font-bold">Full Stack Developer</span> with over 1.4+ years of experience in architecting scalable web applications. I specialize in building high-performance systems using <span>React.js, Node.js, and Microservices</span>, with expertise in <span>Kafka, Redis, and MongoDB</span> to deliver robust production-ready solutions.
           </p>
           <div className="flex flex-wrap gap-4 max-lg:justify-center mb-6">
             <a

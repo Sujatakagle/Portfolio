@@ -59,9 +59,7 @@ body {
       transparent 15%
     ),
     /* bottom left */
-      radial-gradient(circle at 95% -15%, #da4df166 5%, transparent 30%),
-    /* top right */
-      radial-gradient(circle at center right, #c4f5e9b2 2%, transparent 35%); /* center right */
+      radial-gradient(circle at 95% -15%, #da4df166 5%, transparent 30%);
 }
 .blog-background {
   background: radial-gradient(circle at -10% 0%, #da4df166 1%, transparent 25%),

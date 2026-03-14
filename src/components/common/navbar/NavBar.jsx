@@ -73,9 +73,25 @@ const NavBar = () => {
         }
       `}</style>
       <div className="navbar flex justify-between mx-auto content">
-        <div className="flex items-center justify-between">
-          <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+        <Link
+          href="#introduction"
+          to={`introduction`}
+          smooth={true}
+          duration={900}
+          className="flex items-center border-0 lg:max-xxl:ps-5"
+        >
+          <div className="text-xl sm:text-2xl tracking-widest font-light uppercase">
+            SV<span className="text-picto-primary font-black">K</span>
+          </div>
+        </Link>
+
+        <div className="flex items-center gap-4">
+          <ul className="hidden lg:flex menu menu-horizontal text-[16px] font-medium md:shrink-0">
+            {menu}
+          </ul>
+
+          <div className="dropdown dropdown-end lg:hidden">
+            <div tabIndex={0} role="button" className="btn btn-ghost">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -87,7 +103,7 @@ const NavBar = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
+                  d="M4 6h16M4 12h16M4 18h16"
                 />
               </svg>
             </div>
@@ -98,33 +114,6 @@ const NavBar = () => {
               {menu}
             </ul>
           </div>
-
-          <Link
-            href="#introduction"
-            to={`introduction`}
-            smooth={true}
-            duration={900}
-            className="flex items-center border-0 lg:max-xxl:ps-5"
-          >
-            <div className="text-xl sm:text-2xl tracking-widest font-light uppercase">
-              SV<span className="text-picto-primary font-black">K</span>
-            </div>
-          </Link>
-        </div>
-
-        <div className="flex items-center gap-4">
-          <ul className="hidden lg:flex menu menu-horizontal text-[16px] font-medium md:shrink-0">
-            {menu}
-          </ul>
-          <Link
-            to="contact"
-            smooth={true}
-            duration={1000}
-            offset={-100}
-            className="lg:hidden border-2 border-picto-primary text-picto-primary text-[10px] px-4 py-1.5 rounded-md font-bold active:bg-picto-primary active:text-white transition-all mr-2 uppercase tracking-wider"
-          >
-            Contact
-          </Link>
         </div>
       </div>
     </div>
