@@ -20,7 +20,7 @@ const addressData = [
   },
   {
     icon: faPhone,
-    title: "Call Me Now",
+    title: "Contact Number",
     description: "6363656840",
   },
 ];
@@ -83,7 +83,7 @@ const Contact = () => {
             <div className="bg-picto-primary/5 p-8 rounded-3xl border border-picto-primary/10 text-center max-w-md">
               <h3 className="text-2xl font-bold text-[#132238] mb-4">Open to Opportunities</h3>
               <p className="text-gray-600 mb-6">
-                I'm actively looking for new professional roles and collaborations. 
+                I'm actively looking for <span className="text-picto-primary font-bold">Full Stack Developer</span> roles and collaborations. 
                 Feel free to reach out if you think I'd be a good fit for your organization.
               </p>
               <a 

@@ -112,10 +112,19 @@ const NavBar = () => {
           </Link>
         </div>
 
-        <div className="lg:flex items-center">
+        <div className="flex items-center gap-4">
           <ul className="hidden lg:flex menu menu-horizontal text-[16px] font-medium md:shrink-0">
             {menu}
           </ul>
+          <Link
+            to="contact"
+            smooth={true}
+            duration={1000}
+            offset={-100}
+            className="lg:hidden border-2 border-picto-primary text-picto-primary text-[10px] px-4 py-1.5 rounded-md font-bold active:bg-picto-primary active:text-white transition-all mr-2 uppercase tracking-wider"
+          >
+            Contact
+          </Link>
         </div>
       </div>
     </div>
