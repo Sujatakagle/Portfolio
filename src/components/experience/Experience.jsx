@@ -8,7 +8,7 @@ const experienceData = [
     company: "Outdid Unified Pvt Ltd, Bangalore, India",
     role: "Full Stack Developer",
     period: "Oct 2024 – Present",
-    description: "Developed microservice-based backend modules using Node.js, MongoDB, and Kafka. Integrated Razorpay and improved API performance using Redis caching.",
+    description: "Developed microservice-based backend modules using Node.js, MongoDB, and Kafka. Built responsive frontends with React.js and Next.js. Integrated Razorpay and improved API performance using Redis caching.",
   },
   {
     id: 2,
@@ -95,8 +95,8 @@ const ExperienceItem = ({ item, index }) => {
 
 const Experience = () => {
   return (
-    <div className="content py-20 md:py-32" id="experience">
-      <div className="text-center mb-16 md:mb-24">
+    <div className="content pt-8 pb-8 md:pt-12 md:pb-12" id="experience">
+      <div className="text-center mb-8 md:mb-12">
         <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
           Experience
         </h2>

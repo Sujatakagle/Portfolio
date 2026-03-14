@@ -94,9 +94,9 @@ const EducationItem = ({ item, index }) => {
 
 const Education = () => {
   return (
-    <div className="content py-24 md:py-32" id="education">
+    <div className="content pt-10 pb-8 md:pt-14 md:pb-12" id="education">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="mb-16 text-center md:text-left">
+        <div className="mb-10 text-center md:text-left">
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
             Education <span className="text-picto-primary">Journey</span>
           </h2>

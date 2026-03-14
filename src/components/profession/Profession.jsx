@@ -6,6 +6,7 @@ import {
   faJs, 
   faHtml5, 
   faCss3Alt, 
+  faDocker,
 } from "@fortawesome/free-brands-svg-icons";
 import { 
   faDatabase, 
@@ -39,6 +40,7 @@ const skillCategories = [
       { name: "Express", icon: faServer, color: "#444" },
       { name: "Kafka", icon: faMicrochip, color: "#231F20" },
       { name: "Redis", icon: faDatabase, color: "#DC382D" },
+      { name: "Docker", icon: faDocker, color: "#2496ED" },
       { name: "REST APIs", icon: faTerminal, color: "#4caf50" },
     ]
   },
@@ -81,15 +83,15 @@ const SkillCategory = ({ category, index }) => {
   return (
     <div 
       ref={domRef}
-      className={`space-y-4 transition-all duration-1000 transform ${
+      className={`pt-6 space-y-4 transition-all duration-1000 transform ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
       {/* Category Header */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 border-b border-gray-100 pb-3">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 flex items-center justify-center bg-white shadow-sm text-picto-primary rounded-lg border border-gray-100 transition-transform duration-500 hover:rotate-12">
-            <FontAwesomeIcon icon={category.icon} className="text-sm" />
+          <div className="w-12 h-12 flex items-center justify-center bg-white shadow-sm text-picto-primary rounded-lg border border-gray-100 transition-transform duration-500 hover:rotate-12">
+            <FontAwesomeIcon icon={category.icon} className="text-xl" />
           </div>
           <div>
             <h3 className="text-lg md:text-xl font-semibold text-gray-900 tracking-tight uppercase">
@@ -114,10 +116,10 @@ const SkillCategory = ({ category, index }) => {
               transitionDelay: `${idx * 100}ms` 
             }}
           >
-            <div className="w-9 h-9 flex items-center justify-center bg-gray-50 rounded-md group-hover:bg-white transition-colors duration-500 shrink-0">
+            <div className="w-14 h-14 flex items-center justify-center bg-gray-50 rounded-md group-hover:bg-white transition-colors duration-500 shrink-0">
               <FontAwesomeIcon 
                 icon={skill.icon} 
-                className="text-lg md:text-xl transition-transform duration-500 group-hover:scale-110" 
+                className="text-3xl md:text-4xl transition-transform duration-500 group-hover:scale-110" 
                 style={{ color: skill.color }} 
               />
             </div>
@@ -136,16 +138,16 @@ const SkillCategory = ({ category, index }) => {
 
 const Profession = () => {
   return (
-    <div className="content py-16 md:py-24" id="skills">
+    <div className="content pt-10 pb-8 md:pt-14 md:pb-12" id="skills">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="mb-12 text-center md:text-left">
+        <div className="mb-10 text-center md:text-left">
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-2 tracking-tight">
             Technical <span className="text-picto-primary">Proficiency</span>
           </h2>
           <div className="w-16 h-1.5 bg-picto-primary mx-auto md:mx-0 rounded-full" />
         </div>
 
-        <div className="space-y-16">
+        <div className="space-y-8">
           {skillCategories.map((category, index) => (
             <SkillCategory key={index} category={category} index={index} />
           ))}

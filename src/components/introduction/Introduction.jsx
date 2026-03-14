@@ -51,7 +51,7 @@ const Introduction = () => {
   return (
     <div
       ref={domRef}
-      className={`flex max-lg:flex-col-reverse sm:justify-between pt-8 lg:pt-24 lg:mb-27.5 max-xl:gap-2 p-2 max-xxl:px-4 transition-all duration-1000 transform ${
+      className={`flex max-lg:flex-col-reverse sm:justify-between pt-12 lg:pt-20 lg:mb-4 max-xl:gap-2 p-2 max-xxl:px-4 transition-all duration-1000 transform ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
       id="introduction"
@@ -93,7 +93,7 @@ const Introduction = () => {
           </div>
         </div>
         <div className="mx-auto lg:mx-0 relative">
-          <div className="grid max-xxs:grid-flow-col grid-cols-3 w-fit mt-10 gap-1">
+          <div className="grid max-xxs:grid-flow-col grid-cols-3 w-fit mt-2 gap-3">
             {informationSummaryData.map((item) => (
               <InformationSummary key={item.id} item={item} />
             ))}

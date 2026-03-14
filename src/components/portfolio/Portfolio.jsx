@@ -50,7 +50,10 @@ const projectData = [
 
 const Portfolio = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [showAll, setShowAll] = useState(false);
   const domRef = useRef();
+
+  const displayedProjects = showAll ? projectData : projectData.slice(0, 3);
 
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
@@ -74,27 +77,38 @@ const Portfolio = () => {
   return (
     <div
       ref={domRef}
-      className={`content mt-10 md:mt-15 xl:mt-25 mb-10 md:mb-25 max-xxl:p-2 transition-all duration-1000 transform ${
+      className={`content mt-10 md:mt-16 xl:mt-20 mb-8 md:mb-16 max-xxl:p-2 transition-all duration-1000 transform ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
       id="projects"
     >
-      <div className="mb-16 text-center md:text-left">
+      <div className="mb-12 text-center md:text-left">
         <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
           Recent <span className="text-picto-primary">Projects</span>
         </h2>
         <div className="w-16 h-1.5 bg-picto-primary mx-auto md:mx-0 rounded-full" />
-        <p className="font-medium text-sm md:text-base mt-6 text-gray-500 max-w-2xl mx-auto md:mx-0 leading-relaxed">
+        <p className="font-medium text-sm md:text-base mt-4 text-gray-500 max-w-2xl mx-auto md:mx-0 leading-relaxed">
           A showcase of my recent work, highlighting my expertise in building
           scalable architectures and user-centric interfaces.
         </p>
       </div>
-      <div className="mx-auto flex justify-center">
-        <div className="grid xl:grid-cols-3 md:grid-cols-2 gap-10">
-          {projectData.map((data, index) => (
+      <div className="mx-auto flex flex-col items-center">
+        <div className="grid xl:grid-cols-3 md:grid-cols-2 gap-6">
+          {displayedProjects.map((data, index) => (
             <Projects data={data} key={index} />
           ))}
         </div>
+        
+        {projectData.length > 3 && (
+          <div className="mt-8">
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="px-6 py-2 text-sm font-medium border-2 border-picto-primary text-picto-primary bg-transparent hover:bg-picto-primary hover:text-white rounded-full transition-all duration-300 shadow-sm"
+            >
+              {showAll ? "View Less" : "View More"}
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
