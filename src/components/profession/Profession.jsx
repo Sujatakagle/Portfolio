@@ -37,8 +37,10 @@ const skillCategories = [
     icon: faServer,
     skills: [
       { name: "Node JS", icon: faNodeJs, color: "#339933" },
+      { name: "Nest JS", icon: faNodeJs, color: "#E0234E" },
       { name: "Express", icon: faServer, color: "#444" },
       { name: "Kafka", icon: faMicrochip, color: "#231F20" },
+      { name: "RabbitMQ", icon: faServer, color: "#FF6600" },
       { name: "Redis", icon: faDatabase, color: "#DC382D" },
       { name: "Docker", icon: faDocker, color: "#2496ED" },
       { name: "REST APIs", icon: faTerminal, color: "#4caf50" },

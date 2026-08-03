@@ -11,7 +11,7 @@ const informationSummaryData = [
   {
     id: 1,
     title: "Experience",
-    description: "1.4+ Y.",
+    description: "2+ Y.",
   },
   {
     id: 2,
@@ -65,7 +65,7 @@ const Introduction = () => {
             </span>
           </p>
           <p className="text-xs xxs:text-lg lg:text-[18px] my-6">
-            I'm a <span className="text-picto-primary font-bold">Full Stack Developer</span> with over 1.4+ years of experience in architecting scalable web applications. I specialize in building high-performance systems using <span>React.js, Node.js, and Microservices</span>, with expertise in <span>Kafka, Redis, and MongoDB</span> to deliver robust production-ready solutions.
+            I'm a <span className="text-picto-primary font-bold">Full Stack Developer</span> with over 2+ years of experience in architecting scalable web applications. I specialize in building high-performance systems using <span>React.js, Next.js, Nest.js, Node.js, and Microservices</span>, with expertise in <span>Kafka, RabbitMQ, Redis, and MongoDB</span> to deliver robust production-ready solutions.
           </p>
           <div className="flex flex-wrap gap-4 max-lg:justify-center mb-6">
             <a
@@ -76,7 +76,7 @@ const Introduction = () => {
             </a>
             <a
               className="btn bg-white border-2 border-picto-primary text-picto-primary hover:bg-picto-primary hover:text-white px-8"
-              href="https://drive.google.com/file/d/1dv8DEErIT73OWR5diEK5vdbJ-1_QvPz7/view"
+              href="https://drive.google.com/file/d/1n7Oiz3h2C9cBsG4IH-ng_4MsLtwBXAyj/view?usp=drivesdk"
               target="_blank"
               rel="noopener noreferrer"
             >

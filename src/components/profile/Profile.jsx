@@ -39,7 +39,7 @@ const Profile = () => {
             className={`text-xs xs:text-[16px] lg:text-lg font-normal max-md:text-center text-gray-600`}
           >
             <p className={``}>
-              Full Stack Developer with 1.4+ years of experience building scalable web and mobile applications using React.js, Next.js, Node.js, MongoDB, Kafka, Redis, Flutter, and Docker.
+              Full Stack Developer with 2+ years of experience building scalable web and mobile applications using React.js, Next.js, Nest.js, Node.js, MongoDB, Kafka, RabbitMQ, Redis, Flutter, and Docker.
             </p>
             <p className="mt-3">
               I specialize in microservices, REST APIs, and performance optimization, focused on delivering high-quality software solutions.
